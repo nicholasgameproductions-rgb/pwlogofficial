@@ -1,0 +1,14 @@
+name: PwLogngp
+version: '1.1'
+main: nicholasgp.collegeisfun.site
+api-version: '1.21'
+softdepend: [AuthMe]
+commands:
+  pwlog:
+    description: View redacted authentication activity
+    usage: /pwlog [page|search <text>|clear]
+    permission: pwlog.view
+permissions:
+  pwlog.view:
+    description: View and manage redacted authentication activity logs
+    default: op
